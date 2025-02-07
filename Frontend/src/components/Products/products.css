@@ -1,0 +1,45 @@
+.ca_ima{
+    background-image: url('./src/components/Products/card_image.avif');
+    height: 200px;
+    weight: 500px;
+}
+.card1{
+    position: relative;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.card1::after, .card1::before{
+
+    content: '';
+    border-radius: 10px;
+    position: absolute;
+    height: 101.5%;
+    width: 102.5%;
+    background-image: conic-gradient(from var(--angle),transparent 70%,green);
+    top: 50%;
+    left: 50%;
+    translate:-50% -50%;
+    z-index: -1;
+    animation: 3s spin linear infinite;
+}
+
+.card1::before{
+    filter: blur(1.5rem)
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}

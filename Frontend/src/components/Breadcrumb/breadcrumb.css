@@ -1,0 +1,22 @@
+.image{
+    width:25px;
+}
+
+@keyframes moveCart {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(100% - 25px));
+    }
+  }
+  
+  .cart {
+    position: relative;
+    width: 25px; /* Adjust cart size */
+    height: auto;
+    animation: moveCart 10s linear forwards;
+  }
+  
+  
+  

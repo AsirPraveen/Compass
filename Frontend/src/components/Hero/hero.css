@@ -1,0 +1,20 @@
+.ima{
+    background-image: url('./src/components/Hero/hero_logo.jpg');
+    height: 470px;
+}
+
+.c-item{
+    height: 480px;
+}
+.c-item img{
+    height: 100%;
+    object-fit: cover;
+}
+.bordered-text {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+  }
+  .bordered-textp {
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: white;
+  }
