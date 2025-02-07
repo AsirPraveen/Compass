@@ -17,7 +17,7 @@ function App() {
         <Route path="/search/:slug" element={<Product_details/>}/>
         <Route path='/addproducts' element={<AddProducts/>} />
       </Routes>
-
+      {/* git added */}
     </div>
   )
 
