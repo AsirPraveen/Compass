@@ -4,7 +4,7 @@ import {AiOutlineStar} from 'react-icons/ai'
 
 const Star = ({stars}:any) => {
 
-    const ratingStar = Array.from({length: 5}, (elem, index) => {
+    const ratingStar = Array.from({length: 5}, (elem , index) => {
         let number=index+0.5;
         return (
             <span key={index}>
