@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
   const [location, setLocation] = useState<string>("Location");
   const [language, setLanguage] = useState<string>("English");
-
+ 
 
   useEffect(() => {
     const savedLocation = localStorage.getItem("userLocation");

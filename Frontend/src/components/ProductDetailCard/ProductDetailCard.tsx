@@ -4,7 +4,7 @@ import Star from "../Star/Star";
 
 interface ProductDetailCardProps {
   product: Product;
-}
+} 
 
 const ProductDetailCard: FC<ProductDetailCardProps> = ({ product }) => {
   return (

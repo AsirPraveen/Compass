@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer'
 import Hero from '../components/Hero/Hero'
 import Products from '../components/Products/Products'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
-
+ 
 const Home = () => {
   return (
     <div className='d-flex min-vh-100 flex-column'>

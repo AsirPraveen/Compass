@@ -20,7 +20,7 @@ const Footer = () => {
         <p>All Right reserved by Asir | 2025</p>
       </div>
     </footer>
-  );
+  ); 
 };
 
 export default Footer;

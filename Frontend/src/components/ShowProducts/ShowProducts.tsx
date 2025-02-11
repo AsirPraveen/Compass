@@ -6,7 +6,7 @@ import { Spinner, Pagination } from "react-bootstrap";
 import useProductStore from "../../store/ProductStore";
 
 const Show_products = () => {
-
+ 
   const { products, fetchProducts, loading, setSelectedCategory, setSearchTerm} = useProductStore()
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;

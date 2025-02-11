@@ -19,7 +19,7 @@ const Hero = () => {
             <h1 className='display-1 fw-bolder text-capitalize bordered-text'>Shopping And Department Store</h1>
             <Link to='/search'>
             <button className="btn btn-info px-4 py-2 fs-5 mt-5">Explore</button>
-            </Link>
+            </Link> 
           </div>
         </div>
         <div className="carousel-item c-item" data-bs-interval="4000">

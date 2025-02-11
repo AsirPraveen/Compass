@@ -6,7 +6,7 @@ import { Product } from "../../store/ProductStore";
 interface ProductCardProps {
   product: Product;
 }
-
+ 
 const ProductCard = ({ product }: ProductCardProps) => {
   const {
     title,

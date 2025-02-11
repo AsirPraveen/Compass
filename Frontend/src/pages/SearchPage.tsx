@@ -5,7 +5,7 @@ import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 import SearchComponent from '../components/SearchComponent/SearchComponent'
 
 const SearchPage = () => {
-  return (
+  return ( 
     <div className='d-flex min-vh-100 flex-column'>
       <Header/>
         <Navbar/>

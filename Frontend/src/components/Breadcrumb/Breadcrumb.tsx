@@ -12,7 +12,7 @@ const Breadcrumbs = () => {
           <Link to="/">
           <a>
             <img className="image" src="/src/components/Breadcrumb/home.png"/>
-          </a>
+          </a> 
           </Link>
         </li>
         {

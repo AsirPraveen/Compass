@@ -6,7 +6,7 @@ import SearchPage from "./pages/SearchPage"
 import AddProducts from "./pages/AddProducts"
 import './index.css'
 
-
+ 
 function App() {  
   return (
     <div>

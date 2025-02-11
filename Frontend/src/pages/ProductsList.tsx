@@ -5,7 +5,7 @@ import ShowProducts from '../components/ShowProducts/ShowProducts'
 import Breadcrumb from '../components/Breadcrumb/Breadcrumb'
 
 const ProductsList = () => {
-  return (
+  return ( 
     <div className='d-flex min-vh-100 flex-column'>
         <Header/>
         <Navbar/>

@@ -123,7 +123,7 @@ const SearchComponent = () => {
           <option value="discount">Discount Percentage</option>
           <option value="rating">Rating</option>
         </select>
-      </div>
+      </div> 
 
       {/* Empty State Video */}
       {products1.length === 0 && !error && (

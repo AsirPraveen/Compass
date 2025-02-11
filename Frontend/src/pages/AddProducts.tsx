@@ -5,7 +5,7 @@ import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
 import AddProduct from "../components/AddProduct/AddProduct";
 
 const AddProducts = () => {
-  return (
+  return ( 
     <div className="d-flex min-vh-100 flex-column">
       <Header />
       <Navbar />

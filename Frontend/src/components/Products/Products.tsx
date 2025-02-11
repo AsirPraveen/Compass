@@ -1,6 +1,6 @@
 import './products.css'
 import {Link} from 'react-router-dom'
-
+ 
 const Products = () => {
   return (
       <div className='container col-6 py-1 my-2'>

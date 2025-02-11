@@ -46,7 +46,7 @@ const ProductDetails = () => {
       <Breadcrumb />
       <ProductDetailCard product={product} />
       <Footer />
-    </div>
+    </div> 
   );
 };
 

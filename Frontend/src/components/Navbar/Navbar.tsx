@@ -12,7 +12,7 @@ const Navbar = () => {
         <Link to="/" className='text-decoration-none text-dark'>
           <img src={compass} alt="Shopcart" width="30" height="24" className="d-inline-block align-text-top pe-1 pt-1" />
           <strong>Compass</strong>
-          </Link>
+          </Link> 
         </a>
         
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

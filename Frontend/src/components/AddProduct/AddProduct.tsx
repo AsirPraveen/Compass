@@ -69,7 +69,7 @@ const AddProduct: React.FC = () => {
           <Form.Label>Stock</Form.Label>
           <Form.Control 
             type="number" 
-            placeholder="Eg: 50" 
+            placeholder="Eg: 50"  
             {...register("stock", { 
               required: "Stock is required", 
               pattern: {
