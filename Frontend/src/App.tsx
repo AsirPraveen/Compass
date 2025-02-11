@@ -1,7 +1,7 @@
 import { Routes,Route } from "react-router-dom"
 import Home from "./pages/Home"
-import Products_list from "./pages/Products_list"
-import Product_details from "./pages/Product_details"
+import Products_list from "./pages/ProductsList"
+import Product_details from "./pages/ProductDetails"
 import SearchPage from "./pages/SearchPage"
 import AddProducts from "./pages/AddProducts"
 import './index.css'
@@ -17,7 +17,6 @@ function App() {
         <Route path="/search/:slug" element={<Product_details/>}/>
         <Route path='/addproducts' element={<AddProducts/>} />
       </Routes>
-      {/* git added */}
     </div>
   )
 

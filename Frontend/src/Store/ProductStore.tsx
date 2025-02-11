@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import axios from "axios";
 
-interface Product {
+export interface Product {
   id: number;
   title: string;
   description: string;
@@ -18,18 +18,22 @@ interface Product {
   returnPolicy: string;
   availabilityStatus: string;  
   images: string[];
-  meta?: { qrCode?: string };
-  reviews?: { reviewerName: string; rating: number; comment: string }[];
+  meta?: { qrCode?: string } | undefined;
+  reviews?: { reviewerName: string; rating: number; comment: string }[] | undefined;
+  thumbnail: string;
 }
 
 interface ProductStore {
   products: Product[];
   setProducts: (arr : Product[]) => void;
 
+  product: Product | undefined;
+  setProduct: (product: Product) => void;
+
   loading: boolean;
   fetchProducts: () => Promise<void>;
 
-  searchTerm : string | undefined;
+  searchTerm : string;
   setSearchTerm: (val: string)=>void;
 
   selectedCategory: string | undefined;
@@ -45,9 +49,14 @@ const useProductStore = create<ProductStore>((set, get) => ({
     set({ products: arr  })
   },
 
+  product: undefined,
+  setProduct: (product: Product) => {
+    set({ product });
+  },
+
   loading: false,
 
-  searchTerm: undefined,
+  searchTerm: '',
   setSearchTerm: (val: string) => {
     set({ searchTerm: val });
   },

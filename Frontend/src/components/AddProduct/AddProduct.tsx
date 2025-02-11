@@ -4,24 +4,7 @@ import { Container, Form, Button } from "react-bootstrap";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-type ProductFormData = {
-  title: string;
-  description: string;
-  price: number;
-  discountPercentage?: number;
-  rating: number;
-  stock: number;
-  brand: string;
-  category: string;
-  sku: string;
-  weight: number;
-  warrantyInformation: string;
-  shippingInformation: string;
-  returnPolicy: string;
-  availabilityStatus: string;
-  images: string[];
-  qrCode: string;
-};
+import { Product } from "../../store/ProductStore"
 
 const AddProduct: React.FC = () => {
   const {
@@ -29,9 +12,9 @@ const AddProduct: React.FC = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<ProductFormData>();
+  } = useForm<Product>();
 
-  const onSubmit = (data: ProductFormData) => {
+  const onSubmit = (data: Product) => {
     console.log("Product Data:", data);
     toast.success("Product successfully added !!!");
     reset();
@@ -213,7 +196,7 @@ const AddProduct: React.FC = () => {
           <Form.Control 
             type="text" 
             placeholder="Eg: https://example.com/qrcode.jpg" 
-            {...register("qrCode", { 
+            {...register("meta.qrCode", { 
               required: "QR Code is required", 
               pattern: {
                 value: /^(https?:\/\/[^\s]+(\.[^\s]{2,})+)$/, 
@@ -221,7 +204,7 @@ const AddProduct: React.FC = () => {
               }
             })} 
           />
-          {errors.qrCode && <span className="text-danger">{errors.qrCode.message}</span>}
+          {errors.meta && errors.meta.qrCode && <span className="text-danger">{errors.meta.qrCode.message}</span>}
         </Form.Group>
 
         <div className="d-flex justify-content-center">
